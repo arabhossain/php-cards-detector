@@ -17,8 +17,8 @@
     "php": ">=5.3"
   },
   "autoload": {
-    "psr-4": {
-      "CardsDetector": "src/Detector.php"
+    "psr-0": {
+      "CardsDetector": "src"
     }
   },
   "minimum-stability": "dev",
