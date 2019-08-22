@@ -31,7 +31,7 @@ class Logo
         $base64 = $this->get_logo_base64();
 
         if($base64 !== null){
-            $logo = '<img ' . $html_attrs . ' src="' . $base64 . '" alt="Red dot" />';
+            $logo = '<img ' . $html_attrs . ' src="' . $base64 . '" alt=".$this->card." />';
             return $logo;
         }
         return '';
