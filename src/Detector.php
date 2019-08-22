@@ -22,7 +22,7 @@ class Detector
         $validator = new Validator();
 
         /** @var Array $cardTypes */
-        $cardTypes = [
+        $cardTypes = array(
             'Visa',
             'Amex',
             'MasterCard',
@@ -30,14 +30,14 @@ class Detector
             'JCB',
             'DinersClub',
             'Maestro'
-        ];
+        );
         /** @var Array $cardTypes */
         if (empty($cardTypes)) {
         } else {
             foreach ($cardTypes as $cardType) {
                 $method = 'is' . $cardType;
                 if ($validator->$method($card)) {
-                     return $cardType;
+                     return new Logo($cardType);
                 }
             }
         }

@@ -12,7 +12,7 @@ include_once 'autoloader.php';
 
 
 try{
-    echo  \src\Detector::detect("4111111111111111");
+    var_dump(\src\Detector::detect("5555555555554444")->get_logo());
 }catch (Exception $e){
     var_dump($e);
 }
