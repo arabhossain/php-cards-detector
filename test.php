@@ -8,7 +8,7 @@
 
 
 
-include_once 'autoloader.php';
+include_once 'autoload.php';
 
 $type = \src\Detector::detect("5555555555554444");
 
