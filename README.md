@@ -22,10 +22,13 @@ composer require arabhossain/php-cards-detector
 ```
 require "vendor/autoload.php";
 
-$type = \src\Detector::detect("5555555555554444");
+echo \CardDetector\Detector::detect("5555555555554444")->get_name();
+echo \CardDetector\Detector::detect("5555555555554444")->get_logo();
+echo \CardDetector\Detector::detect("5555555555554444")->get_logo_base64();
 
-echo $type->get_name();
-echo $type->get_logo();
-echo $type->get_logo_base64();
-
+```
+>Or you can simply use 
+```
+use  \CardDetector\Detector as CardDetector;
+echo CardDetector::detect(23232313131313)->get_name();
 ```

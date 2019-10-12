@@ -11,4 +11,5 @@ ini_set('display_errors', 1);
 
 include_once  'vendor/autoload.php';
 
-echo \CardDetector\Detector::detect(23232313131313)->get_name();
+use  \CardDetector\Detector as CardDetector;
+echo CardDetector::detect(23232313131313)->get_name();
