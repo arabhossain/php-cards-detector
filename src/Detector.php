@@ -6,22 +6,29 @@
  * Time: 12:35 AM
  */
 
-namespace src;
+namespace CardDetector;
 
 
+/**
+ * Class Detector
+ * @package CardDetector
+ */
 class Detector
 {
+
     /**
      * @param $card
-     * @return mixed|string
+     * @return Logo
+     * @throws \Exception
      */
     public static function detect($card)
     {
+        if(is_null($card)) throw new \Exception('Card number can not be null');
+        if(strlen($card) <= 0) throw new \Exception('Card number can not be empty');
 
-        /** @var Validator $validator */
         $validator = new Validator();
 
-        /** @var Array $cardTypes */
+
         $cardTypes = array(
             'Visa',
             'Amex',
@@ -31,17 +38,17 @@ class Detector
             'DinersClub',
             'Maestro'
         );
-        /** @var Array $cardTypes */
-        if (empty($cardTypes)) {
-        } else {
+        $type = false;
+        if(!is_null($card) || strlen($card) > 0) {
             foreach ($cardTypes as $cardType) {
                 $method = 'is' . $cardType;
-                if ($validator->$method($card)) {
-                     return new Logo($cardType);
+                if($validator->$method($card)) {
+                    $type = $cardType;
                 }
             }
         }
-        return 'Unknown Card';
+
+        return new Logo($type);
     }
 
 }

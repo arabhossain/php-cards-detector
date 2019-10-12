@@ -6,38 +6,52 @@
  * Time: 9:38 AM
  */
 
-namespace src;
+namespace CardDetector;
 
-
+/**
+ * Class Logo
+ * @package CardDetector
+ */
 class Logo
 {
+
+    /**
+     * @var null
+     */
     private $card;
 
     /**
      * Logo constructor.
-     * @param $card
+     * @param null $card
+     * @throws \Exception
      */
-    public function __construct($card)
+    public function __construct($card = null)
     {
+        if(!$card) throw new \Exception('Card number is not valid');
+
         $this->card = $card;
     }
 
     /**
      * @param string $html_attrs
-     * @return null|string
+     * @return string
+     * @throws \Exception
      */
     public function get_logo($html_attrs = '')
     {
         $base64 = $this->get_logo_base64();
-
-        if($base64 !== null){
-            $logo = '<img ' . $html_attrs . ' src="' . $base64 . '" alt="Red dot" />';
-            return $logo;
-        }
-        return '';
+        $logo = '<img ' . $html_attrs . ' src="' . $base64 . '" alt="Red dot" />';
+        return $logo;
     }
 
-    public function get_logo_base64(){
+
+    /**
+     * @return string
+     * @throws \Exception
+     */
+    public function get_logo_base64()
+    {
+
         $file = __DIR__ . '/images/' . $this->card . '.png';
         if(file_exists($file)) {
             $type = pathinfo($file, PATHINFO_EXTENSION);
@@ -46,9 +60,13 @@ class Logo
             return $base64;
         }
 
-        return null;
+        throw new \Exception('Card logo not found');
     }
 
+
+    /**
+     * @return null
+     */
     public function get_name()
     {
         return $this->card;

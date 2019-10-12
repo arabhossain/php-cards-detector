@@ -5,7 +5,7 @@
  * Date: 8/22/19
  * Time: 12:34 AM
  */
-namespace src;
+namespace CardDetector;
 
 /**
  * Class Validator

@@ -1,4 +1,4 @@
-# Detect Debit Credit Card Types
+# Detect Debit Credit Card Types with logo
 
 <p>Utility to determine credit card type</p>
 
@@ -7,6 +7,15 @@
 ```
 composer require arabhossain/php-cards-detector
 ```
+
+### Supported Cards
+<li>Amex</li>
+<li>DinersClub</li>
+<li>Discover</li>
+<li>JCB</li>
+<li>Maestro</li>
+<li>MasterCard</li>
+<li>Visa</li>
 
 ### Usage
 

@@ -1,0 +1,5 @@
+.idea
+vendor
+test.php
+composer.lock
+.phpunit.result.cache
