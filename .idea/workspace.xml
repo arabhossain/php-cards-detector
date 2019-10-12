@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d04dbe-a82a-4357-a588-c051cf057f7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +33,7 @@
           <entry key="json" value="5" />
           <entry key="lock" value="1" />
           <entry key="md" value="3" />
-          <entry key="php" value="17" />
+          <entry key="php" value="19" />
           <entry key="xml" value="1" />
           <entry key="yml" value="2" />
         </counts>
@@ -42,7 +42,7 @@
         <counts>
           <entry key="JSON" value="6" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="17" />
+          <entry key="PHP" value="19" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="2" />
@@ -52,7 +52,7 @@
         <counts>
           <entry key="gitignore" value="56" />
           <entry key="json" value="38" />
-          <entry key="md" value="72" />
+          <entry key="md" value="113" />
           <entry key="php" value="1008" />
           <entry key="xml" value="211" />
         </counts>
@@ -60,7 +60,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="38" />
-          <entry key="Markdown" value="72" />
+          <entry key="Markdown" value="113" />
           <entry key="PHP" value="1008" />
           <entry key="PLAIN_TEXT" value="56" />
           <entry key="XML" value="211" />
@@ -75,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="44" />
+              <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -106,10 +106,24 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="237">
-                <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <first_editor relative-caret-position="59">
+                <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autoload.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Logo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -128,11 +142,11 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/CardTypesTests.php" />
         <option value="$PROJECT_DIR$/src/Validator.php" />
-        <option value="$PROJECT_DIR$/src/Logo.php" />
         <option value="$PROJECT_DIR$/src/Detector.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Logo.php" />
       </list>
     </option>
   </component>
@@ -195,6 +209,11 @@
               <item name="php-card-detector" type="b2602c69:ProjectViewProjectNode" />
               <item name="php-card-detector" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="php-card-detector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php-card-detector" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -255,7 +274,7 @@
       <workItem from="1566442407744" duration="7957000" />
       <workItem from="1568439416094" duration="1369000" />
       <workItem from="1568535594818" duration="27000" />
-      <workItem from="1570873849254" duration="4792000" />
+      <workItem from="1570873849254" duration="5092000" />
     </task>
     <servers />
   </component>
@@ -265,7 +284,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14824000" />
+    <option name="totallyTimeSpent" value="15124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,7 +297,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1600" height="810" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27083334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -363,13 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -391,20 +402,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="237">
-            <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <first_editor relative-caret-position="59">
+            <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="44" />
+        <state relative-caret-position="225">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
